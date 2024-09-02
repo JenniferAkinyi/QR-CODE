@@ -1,0 +1,74 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Reset CSS */
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    /* 1rem = 16px; */
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+body{
+    /* line-height: 1.5; */
+    font-family: "Outfit", sans-serif;;
+}
+
+/* General Styling */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--slate-300);
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.description{
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    /* padding: 0.3rem; */
+    margin-bottom: 1.5rem;
+}
+
+.paragraph > p{
+    color: var(--slate-500);
+    font-size: 1.3rem;
+}
+
+.img{
+    height: auto;
+    max-height: 500px;
+}
+
+.img img{
+    border-radius: 0.5rem;
+    object-fit: cover;
+    max-height: 400px;
+}
